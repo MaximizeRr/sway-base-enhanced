@@ -1,4 +1,4 @@
 modules:
   - type: rpm-ostree
     install:
-      - swayosd-git.rpm
+      - https://github.com/MaximizeRr/sway-base-enhanced/raw/refs/heads/main/files/rpm-ostree/swayosd-git.rpm
