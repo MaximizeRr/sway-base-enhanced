@@ -1,0 +1,14 @@
+stages:
+  - name: swayosd
+    from: docker.io/library/debian:sid
+    modules:
+      - type: script
+        snippets:
+          - apt-get update && apt-get install -y libglib2.0-dev sassc libudev-dev libevdev-dev libgtk-3-dev libgtk-layer-shell-dev libpulse0 libinput-dev libgtk-4-1 libgtk4-layer-shell-dev libgtk4-layer-shell0 gir1.2-gtk4layershell-1.0 libgtk-4-dev rustup meson git wget #Install builddep
+          - rustup default stable
+          #  - wget http://ftp.fr.debian.org/debian/pool/main/g/gtk4-layer-shell/libgtk4-layer-shell0_1.0.4-1_amd64.deb && dpkg -i ./libgtk4-layer-shell0_1.0.4-1_amd64.deb
+          #  - wget http://ftp.fr.debian.org/debian/pool/main/g/gtk4-layer-shell/libgtk4-layer-shell-dev_1.0.4-1_amd64.deb && dpkg -i ./libgtk4-layer-shell-dev_1.0.4-1_amd64.deb 
+          #  - wget http://ftp.fr.debian.org/debian/pool/main/g/gtk4-layer-shell/gir1.2-gtk4layershell-1.0_1.0.4-1_amd64.deb && dpkg -i ./gir1.2-gtk4layershell-1.0_1.0.4-1_amd64.deb
+          - git clone https://github.com/ErikReider/SwayOSD.git
+          - cd SwayOSD && meson setup build && ninja -C build
+          - cd SwayOSD && mkdir -p /out/swayosd/bin && mv build/src/swayosd-* /out/swayosd/bin/. && mv build/data /out/swayosd/. && mv data/udev /out/swayosd/. && mv data/polkit /out/swayosd/. # Move bin and runtime
