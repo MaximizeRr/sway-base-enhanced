@@ -1,4 +1,4 @@
 modules:
   - type: rpm-ostree
     install:
-      - swayosd-0.1.0-1.git47ef782.fc41.x86_64.rpm 
+      - swayosd-git.rpm
