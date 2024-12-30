@@ -1,13 +1,7 @@
 modules:
     - type: files
       files:
-        - source: system/manjaro-sway/usr/bin/clipboard
-          destination: /usr/bin/clipboard
-        - source: system/manjaro-sway/usr/bin/emoji-picker
-          destination: /usr/bin/clipboard
-        - source: system/manjaro-sway/usr/bin/waybar-signal
-          destination: /usr/bin/waybar-signal
-        - source: system/manjaro-sway/usr/bin/emoji-picker
-          destination: /usr/bin/clipboard
+        - source: system/manjaro-sway/usr/bin
+          destination: /usr/bin
         - source: system/manjaro-sway/usr/share/applications
           destination: /usr/share/applications
