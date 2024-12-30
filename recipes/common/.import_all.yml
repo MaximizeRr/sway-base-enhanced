@@ -2,5 +2,6 @@ modules:
     - from-file: common/default-flatpak.yml
     - from-file: common/default-packages.yml
     - from-file: common/default-system-files.yml
+    - from-file: common/default-systemd-services.yml
     - from-file: common/signing.yml
 
