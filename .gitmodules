@@ -1,0 +1,3 @@
+[submodule ".external-git-repo/manjaro-sway"]
+	path = .external-git-repo/manjaro-sway
+	url = https://github.com/manjaro-sway/desktop-settings.git

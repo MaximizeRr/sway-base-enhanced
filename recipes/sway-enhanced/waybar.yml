@@ -1,7 +1,9 @@
 modules:
     - type: rpm-ostree
       install:
-        - aftertheflood-sparks-fonts
+        - aftertheflood-sparks-dot-line-fonts
+        - aftertheflood-sparks-dot-fonts
+        - aftertheflood-sparks-bar-fonts
 
     - type: files
       files:
