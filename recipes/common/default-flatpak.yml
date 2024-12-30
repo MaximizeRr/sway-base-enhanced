@@ -1,0 +1,12 @@
+type: default-flatpaks
+notify: true 
+system:
+  install:
+    - com.brave.Browser
+    - re.sonny.Junction
+    - com.visualstudio.code
+    - io.missioncenter.MissionCenter
+    - io.github.flattool.Warehouse
+    - com.github.tchx84.Flatseal
+    - org.libreoffice.LibreOffice
+    - org.gnome.Extensions

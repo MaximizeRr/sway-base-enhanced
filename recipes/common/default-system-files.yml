@@ -1,0 +1,4 @@
+type: files
+files:
+  - source: system/etc
+    destination: /etc # copies files/system/* (* means everything inside it) into your image's root folder /

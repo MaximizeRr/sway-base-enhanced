@@ -1,0 +1,21 @@
+type: rpm-ostree
+repos:
+  - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+  - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
+install:
+  # GCC dependancies to allow brew to compile from source
+  - make
+  - automake
+  - gcc
+  - gcc-c++
+  - kernel-devel
+
+  # Networking
+  - wireguard-tools
+
+  # Notifications
+  - SwayNotificationCenter-git
+remove:
+  - firefox
+  - firefox-langpacks 
+  - dunst
