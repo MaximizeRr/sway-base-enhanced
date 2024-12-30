@@ -1,0 +1,49 @@
+modules:
+  - type: files
+    files:
+      - source: system/etc
+        destination: /etc # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
+    install:
+      # GCC dependancies to allow brew to compile from source
+      - make
+      - automake
+      - gcc
+      - gcc-c++
+      - kernel-devel
+
+      # Networking
+      - wireguard-tools
+
+      # Notifications
+      - SwayNotificationCenter-git
+
+    remove:
+      - firefox
+      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - dunst
+
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    system:
+      # If no repo information is specified, Flathub will be used by default
+      install:
+        - com.brave.Browser
+        - re.sonny.Junction
+        - com.visualstudio.code
+        - io.missioncenter.MissionCenter
+        - io.github.flattool.Warehouse
+        - com.github.tchx84.Flatseal
+        - org.libreoffice.LibreOffice
+        - org.gnome.Extensions
+
+  - type: brew
+    nofile-limits: true # increase nofile limits
+    brew-analytics: false # disable telemetry
+
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully

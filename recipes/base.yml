@@ -1,6 +1,6 @@
 ---
 # image will be published to ghcr.io/maximizerr/sway-base-enhanced
-name: sway-base-enhanced
+name: sway-enhanced
 
 description: Fedora Sway with enhanced default settings
 
@@ -8,6 +8,5 @@ base-image: ghcr.io/wayblueorg/sway
 image-version: latest
 
 modules:
-    - from-file: common-modules.yml
-    - from-file: swayosd/install-rpm.yml
-    - from-file: themes/basic.yml
+    - from-file: common/common-modules.yml
+    - from-file: sway-enhanced/.import_all.yml

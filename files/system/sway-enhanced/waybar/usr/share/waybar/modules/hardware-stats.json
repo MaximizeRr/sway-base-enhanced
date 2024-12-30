@@ -1,0 +1,25 @@
+{
+  "custom/auto-cpufreq": {
+    "format": "{}",
+    "tooltip": true,
+    "escape": true,
+    "exec": "/usr/share/sway-enhanced/waybar/bin/hardware/auto-cpufreq-status.sh",
+    "interval": 10
+  },
+  "custom/cpu": {
+    "format": "{} ",
+    "min-length": 5,
+    "exec": "/usr/share/sway-enhanced/waybar/bin/hardware/cpu -i 5s",
+    "return-type": "json"
+  },
+  "custom/cpufreq": {
+    "format": "{} 󰓅",
+    "exec": "/usr/share/sway-enhanced/waybar/bin/hardware/cpufreq -i 5s",
+    "return-type": "json"
+  },
+  "custom/mem": {
+    "format": "{} ",
+    "exec": "/usr/share/sway-enhanced/waybar/bin/hardware/mem -i 5s",
+    "return-type": "json"
+  }
+}

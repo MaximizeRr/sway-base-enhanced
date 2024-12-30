@@ -1,0 +1,9 @@
+modules:
+    - type: rpm-ostree
+      install:
+        - aftertheflood-sparks-fonts
+
+    - type: files
+      files:
+        - source: system/sway-enhanced/waybar
+          destination: /
