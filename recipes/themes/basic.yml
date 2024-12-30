@@ -3,3 +3,6 @@ modules:
       files:
         - source: themes/sway-enhanced
           destination: /
+    - type: rpm-ostree
+      install:
+        - jetbrains-mono-fonts
