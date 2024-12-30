@@ -1,4 +1,4 @@
 type: script
 snippets:
   - "git clone https://github.com/vinceliuice/Matcha-gtk-theme.git /tmp/matcha-gtk && cd /tmp/matcha-gtk && bash install.sh"
-  - "git clone https://github.com/vinceliuice/Matcha-kde.git /tmp/matcha-kde && cd /tmp/matcha-kde && bash install.sh"
+  - "cd /tmp/ && curl -O https://gitlab.com/cscs/matchama-kde/raw/master/install.sh && chmod +x install.sh && ./install.sh"
