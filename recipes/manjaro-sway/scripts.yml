@@ -1,0 +1,7 @@
+modules:
+    - type: files
+      files:
+        - source: system/manjaro-sway/usr/share/sway/scripts
+          destination: /usr/share/manjaro-sway/scripts
+        - source: system/manjaro-sway/usr/share/sway/themes
+          destination: /usr/share/manjaro-sway/themes

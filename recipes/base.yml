@@ -10,3 +10,4 @@ image-version: latest
 modules:
     - from-file: common/common-modules.yml
     - from-file: sway-enhanced/.import_all.yml
+    - from-file: manjaro-sway/.import_all.yml

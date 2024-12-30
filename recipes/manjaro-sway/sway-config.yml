@@ -1,0 +1,5 @@
+modules:
+    - type: files
+      files:
+        - source: system/manjaro-sway/etc/sway/config.d/98-application-defaults.conf
+          destination: /etc/sway/config.d/98-application-defaults.conf
