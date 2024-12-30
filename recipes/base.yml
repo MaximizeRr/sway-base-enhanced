@@ -10,3 +10,4 @@ image-version: latest
 modules:
     - from-file: common-modules.yml
     - from-file: swayosd/install-rpm.yml
+    - from-file: themes/basic.yml
