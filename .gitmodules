@@ -1,3 +1,0 @@
-[submodule "submodules/manjaro-sway"]
-	path = .submodules/manjaro-sway
-	url = https://github.com/manjaro-sway/desktop-settings.git
