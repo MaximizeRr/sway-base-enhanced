@@ -2,4 +2,5 @@ modules:
   - from-file: manjaro-sway/bin.yml
   #  - from-file: manjaro-sway/scripts.yml
   #  - from-file: manjaro-sway/sway-config.yml
-  #  - from-file: manjaro-sway/dependencies.yml
+  - from-file: manjaro-sway/dependencies.yml
+  - from-file: manjaro-sway/themes.yml

@@ -1,7 +1,7 @@
 modules:
   - type: rpm-ostree
     install:
-      - https://github.com/MaximizeRr/sway-base-enhanced/raw/refs/heads/main/files/rpm-ostree/swayosd-git.rpm
+      - https://github.com/MaximizeRr/sway-base-enhanced/raw/refs/heads/main/files/rpm-ostree/swayosd-v0.1.0.rpm
 
   - type: systemd
     system:

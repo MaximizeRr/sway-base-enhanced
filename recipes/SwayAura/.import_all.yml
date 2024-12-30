@@ -1,5 +1,7 @@
 modules:
+  - from-file: SwayAura/sway.yml
   - from-file: SwayAura/waybar.yml
   - from-file: SwayAura/sddm.yml
   - from-file: SwayAura/rofi.yml
   - from-file: SwayAura/backgrounds.yml
+  - from-file: SwayAura/swayosd.yml

@@ -4,6 +4,6 @@ Documentation=man:swayidle(1)
 
 [Service]
 Type=simple
-ExecStart=@prefix@/bin/swayidle-conf
+ExecStart=/usr/bin/swayidle-conf
 Restart=always
 

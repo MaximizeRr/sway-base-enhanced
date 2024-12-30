@@ -5,3 +5,11 @@ modules:
           destination: /
         - source: system/manjaro-sway/sway
           destination: /
+    - type: script
+      snippets:
+        - "rm /usr/share/sway/config.d/90-swayidle.conf"
+        - "chmod 755 /usr/bin/swayidle-conf"
+    - type: systemd
+      user:
+        enabled:
+          - swayidle.service

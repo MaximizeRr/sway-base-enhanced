@@ -1,5 +1,12 @@
 modules:
   - type: rpm-ostree
     install:
+      # Calendar
       - calcurse
+      # Laptop
+      - acpi
+      #Themes
+      - kvantum
+      - gtk-murrine-engine
+      - gtk2-engines
 
