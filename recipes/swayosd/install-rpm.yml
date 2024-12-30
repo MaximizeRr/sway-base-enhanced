@@ -2,3 +2,14 @@ modules:
   - type: rpm-ostree
     install:
       - https://github.com/MaximizeRr/sway-base-enhanced/raw/refs/heads/main/files/rpm-ostree/swayosd-git.rpm
+
+  - type: systemd
+    system:
+      enabled:
+        - swayosd-libinput-backend.service
+
+  # Remove unwanted sway bindings from the base image" 
+  - type: script
+    snippets:
+      - "rm /usr/share/sway/config.d/60-bindings-volume.conf && \
+         rm /usr/share/sway/config.d/60-bindings-brightness.conf"
