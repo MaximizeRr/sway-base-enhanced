@@ -1,6 +1,6 @@
 ---
 # image will be published to ghcr.io/maximizerr/sway-base-enhanced
-name: sway-enhanced
+name: SwayAura
 
 description: Fedora Sway with enhanced default settings
 
