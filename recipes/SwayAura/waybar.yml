@@ -7,5 +7,5 @@ modules:
 
     - type: files
       files:
-        - source: system/sway-enhanced/waybar
+        - source: system/SwayAura/waybar
           destination: /
