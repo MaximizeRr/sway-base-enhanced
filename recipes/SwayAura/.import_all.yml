@@ -5,3 +5,5 @@ modules:
   - from-file: SwayAura/rofi.yml
   - from-file: SwayAura/backgrounds.yml
   - from-file: SwayAura/swayosd.yml
+  - from-file: SwayAura/cursor.yml
+  - from-file: SwayAura/wayland-displays.yml

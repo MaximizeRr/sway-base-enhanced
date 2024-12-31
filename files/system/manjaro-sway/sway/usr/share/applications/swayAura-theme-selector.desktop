@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=SwayAura Theme Selector
+
+Comment=Lets you select a SwayAura theme
+
+Exec=swayAura-theme-selector
+Icon=preferences-desktop-theme
+Terminal=false
+Type=Application
+Categories=Settings;DesktopSettings;

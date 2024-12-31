@@ -139,6 +139,7 @@ window#waybar {
 }
 
 #custom-menu {
+  font-weight: bold;
   padding-left: 8px;
   padding-right: 13px;
 }

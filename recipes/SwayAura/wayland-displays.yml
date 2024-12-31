@@ -1,0 +1,9 @@
+modules:
+    - type: rpm-ostree
+      install:
+        - yaml-cpp
+
+    - type: files
+      files:
+        - source: system/SwayAura/wayland-displays
+          destination: /

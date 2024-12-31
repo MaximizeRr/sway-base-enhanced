@@ -1,4 +1,13 @@
 modules:
+    - type: fonts
+      fonts:
+        nerd-fonts:
+          - JetBrainsMono
+          - NerdFontsSymbolsOnly
+        google-fonts:
+          - Roboto
+          - Open Sans
+
     - type: rpm-ostree
       install:
         - aftertheflood-sparks-dot-line-fonts
